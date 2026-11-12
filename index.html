@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nicolau Calado Jofilsan — Portfólio UX</title>
+<meta name="description" content="Portfólio de Nicolau Calado Jofilsan, UX Researcher e UX Designer. Cases de pesquisa de usabilidade em serviços públicos digitais: Carteira de Identidade Nacional e FGTS Digital." />
+<link rel="canonical" href="https://nicolaucalado.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Nicolau Calado Jofilsan — Portfólio UX" />
+<meta property="og:description" content="UX Researcher e UX Designer. Cases de pesquisa de usabilidade em serviços públicos digitais: CIN e FGTS Digital." />
+<meta property="og:url" content="https://nicolaucalado.github.io/" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="twitter:card" content="summary" />
 
 <link rel="stylesheet" href="styles.css" />
 
@@ -19,6 +27,10 @@
   details > summary { list-style: none; cursor: pointer; }
   details > summary::-webkit-details-marker { display: none; }
   details[open] .chev { transform: rotate(45deg); }
+  @media (max-width: 560px) {
+    [style*="grid-template-columns: 112px"] { grid-template-columns: 1fr !important; gap: 4px !important; }
+    [style*="gap: 10px; flex: none"] { flex-wrap: wrap; }
+  }
 </style>
 
 </head>
@@ -27,9 +39,9 @@
 <div  data-lang="pt" data-screens="on" style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); font-size: 16px; line-height: 1.6; text-wrap: pretty; min-height: 100vh; padding-bottom: 96px;">
 
   <header style="max-width: 940px; margin: 0 auto; padding: 48px 32px 40px; display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; justify-content: space-between;">
-    <div style="display: flex; gap: 24px; align-items: center;">
+    <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap; min-width: 0;">
       <img class="lighten" src="assets/nicolau.jpg" alt="Nicolau Calado Jofilsan" style="width: 92px; height: 92px; border-radius: 50%; object-fit: cover; border: 1px solid var(--color-divider); flex: none;" />
-      <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0;">
         <h1 style="margin: 0; font-family: var(--font-heading); font-size: 34px; line-height: 1.1; font-weight: 500; letter-spacing: -0.02em;">Nicolau Calado Jofilsan</h1>
         <p style="margin: 0; font-family: var(--font-heading); font-size: 14px; letter-spacing: 0.06em; color: var(--color-accent);">UX Researcher &nbsp;|&nbsp; UX Designer &nbsp;|&nbsp; Product Designer</p>
         <p style="margin: 4px 0 0; font-size: 14px;"><a href="https://www.linkedin.com/in/nicolaucalado" target="_blank" rel="noopener">linkedin.com/in/nicolaucalado</a></p>
@@ -40,6 +52,8 @@
       <button type="button" class="btn btn-secondary" data-langbtn="en" style="letter-spacing: 0.1em; min-height: 36px;">EN</button>
     </div>
   </header>
+
+  <main>
 
   <section style="max-width: 940px; margin: 0 auto; padding: 0 32px 56px; border-bottom: 1px solid var(--color-divider);">
     <p class="pt" style="margin: 0; max-width: 720px; font-family: var(--font-heading); font-size: 19px; line-height: 1.5; color: var(--color-neutral-200);">Designer de Experiência do Usuário especializado em pesquisa de usabilidade em sistemas de grande porte. Conduzo o ciclo completo, do diagnóstico do problema à validação com usuários, traduzindo evidência qualitativa e quantitativa em decisões estratégicas de produto.</p><p class="en" style="margin: 0; max-width: 720px; font-family: var(--font-heading); font-size: 19px; line-height: 1.5; color: var(--color-neutral-200);">User Experience Designer specialising in usability research on large-scale systems. I lead the full cycle, from diagnosing the problem to validating with users, turning qualitative and quantitative evidence into strategic product decisions.</p>
@@ -78,7 +92,7 @@
   <section style="max-width: 940px; margin: 0 auto; padding: 72px 32px 0;">
     <p style="margin: 0 0 10px; font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.14em; color: var(--color-accent);">01</p>
     <h3 style="margin: 0 0 12px; font-family: var(--font-heading); font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 20px;"><span class="pt">O contexto</span><span class="en">The context</span></h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 32px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 32px;">
       <div>
         <p class="pt" style="margin: 0 0 14px; color: var(--color-neutral-300);">A Carteira de Identidade Nacional (CIN) é o documento de identificação civil de padrão nacional, e o aplicativo da CIN a leva para o celular. Quando alguém precisa conferir a identidade, a verificação passa pela leitura de um QR Code: os dados básicos aparecem de todo modo, e os demais dependem da autorização do titular.</p><p class="en" style="margin: 0 0 14px; color: var(--color-neutral-300);">The National Identity Card (CIN) is Brazil's national-standard civil identification document, and the CIN app puts it on the phone. When someone needs to check an identity, verification goes through reading a QR Code: basic data always appears, and the rest depends on the holder's authorisation.</p>
         <p class="pt" style="margin: 0; color: var(--color-neutral-300);">Quando o documento é digital, a interface passa a ser o próprio documento. A pergunta da análise deixa de ser estética: <strong style="color: var(--color-text); font-weight: 500;">quem consegue, de fato, usar este documento com segurança?</strong> Um documento de identidade não tem usuário ideal, precisa funcionar para a população inteira.</p><p class="en" style="margin: 0; color: var(--color-neutral-300);">Once the document is digital, the interface becomes the document. The research question stops being cosmetic: <strong style="color: var(--color-text); font-weight: 500;">who can actually use this document, safely?</strong> An identity document has no ideal user, it has to work for an entire population.</p>
@@ -96,7 +110,7 @@
     <p style="margin: 0 0 10px; font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.14em; color: var(--color-accent);">02</p>
     <h3 style="margin: 0 0 12px; font-family: var(--font-heading); font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em;"><span class="pt">Como conduzi a análise</span><span class="en">How I ran the analysis</span></h3>
     <p style="margin: 0 0 32px; max-width: 660px; color: var(--color-neutral-400);"><span class="pt">Análise heurística, análise do fluxo de uso com foco nos obstáculos ao uso (anti&#8209;sludge) e estudo do contexto de uso. Não houve pesquisa com usuários nesta etapa: as conclusões vêm de avaliação por especialista, não de testes com usuários.</span><span class="en">Heuristic analysis, usage-flow analysis focused on obstacles to use (anti&#8209;sludge) and a study of the context of use. There was no user research at this stage: the conclusions come from expert evaluation, not from tests with users.</span></p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 20px;">
       <div style="border-top: 2px solid var(--color-accent); padding-top: 14px;"><p style="margin: 0 0 6px; font-family: var(--font-heading); font-size: 11px; color: var(--color-accent);">01</p><p style="margin: 0 0 6px; font-family: var(--font-heading); font-size: 16px; font-weight: 500;"><span class="pt">Estudar o contexto de uso</span><span class="en">Study the context of use</span></p><p style="margin: 0; font-size: 14px; color: var(--color-neutral-400);"><span class="pt">Entender em que situações o QR Code da CIN é usado e em que condições: conexão instável, ambientes tumultuados e pouco tempo.</span><span class="en">Understand the situations in which the CIN QR Code is used and the conditions: unstable connection, crowded environments and little time.</span></p></div>
       <div style="border-top: 2px solid var(--color-divider); padding-top: 14px;"><p style="margin: 0 0 6px; font-family: var(--font-heading); font-size: 11px; color: var(--color-neutral-500);">02</p><p style="margin: 0 0 6px; font-family: var(--font-heading); font-size: 16px; font-weight: 500;"><span class="pt">Mapear o fluxo de uso</span><span class="en">Map the usage flow</span></p><p style="margin: 0; font-size: 14px; color: var(--color-neutral-400);"><span class="pt">Quatro fluxos de usuário refeitos tela a tela: o que o usuário vê, decide e precisa fazer em cada etapa.</span><span class="en">Four user flows rebuilt screen by screen: what the user sees, decides and has to do at each step.</span></p></div>
       <div style="border-top: 2px solid var(--color-divider); padding-top: 14px;"><p style="margin: 0 0 6px; font-family: var(--font-heading); font-size: 11px; color: var(--color-neutral-500);">03</p><p style="margin: 0 0 6px; font-family: var(--font-heading); font-size: 16px; font-weight: 500;"><span class="pt">Avaliar e caçar obstáculos</span><span class="en">Evaluate and hunt obstacles</span></p><p style="margin: 0; font-size: 14px; color: var(--color-neutral-400);"><span class="pt">Cada tela confrontada com heurísticas de usabilidade, e os obstáculos ao uso registrados como achados.</span><span class="en">Each screen tested against usability heuristics, and the obstacles to use recorded as findings.</span></p></div>
@@ -110,13 +124,13 @@
     <h3 style="margin: 0 0 12px; font-family: var(--font-heading); font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em;"><span class="pt">Os principais achados</span><span class="en">The headline findings</span></h3>
     <p style="margin: 0 0 32px; max-width: 660px; color: var(--color-neutral-400);"><span class="pt">O relatório fecha com duas conclusões centrais. Ambas tratam do mesmo equilíbrio: proteger o titular sem tornar o uso mais difícil.</span><span class="en">The report closes with two central conclusions. Both address the same balance: protecting the holder without making use harder.</span></p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; margin-bottom: 40px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 24px; margin-bottom: 40px;">
       <div style="border-top: 2px solid var(--color-accent); padding-top: 14px;"><p style="margin: 0 0 4px; font-family: var(--font-heading); font-size: 40px; line-height: 1; font-weight: 500; color: var(--color-accent-300);">4</p><p style="margin: 0; font-size: 14px; color: var(--color-neutral-400);"><span class="pt">fluxos de usuário</span><span class="en">user flows</span></p></div>
       <div style="border-top: 2px solid var(--color-accent); padding-top: 14px;"><p style="margin: 0 0 4px; font-family: var(--font-heading); font-size: 40px; line-height: 1; font-weight: 500; color: var(--color-accent-300);">19</p><p style="margin: 0; font-size: 14px; color: var(--color-neutral-400);"><span class="pt">achados documentados</span><span class="en">documented findings</span></p></div>
       <div style="border-top: 2px solid var(--color-accent); padding-top: 14px;"><p style="margin: 0 0 4px; font-family: var(--font-heading); font-size: 40px; line-height: 1; font-weight: 500; color: var(--color-accent-300);">9</p><p style="margin: 0; font-size: 14px; color: var(--color-neutral-400);"><span class="pt">com heurística explícita</span><span class="en">with an explicit heuristic</span></p></div>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px; margin-bottom: 40px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 26px; margin-bottom: 40px;">
       <div style="border-left: 2px solid var(--color-accent); padding-left: 22px;">
         <p style="margin: 0 0 6px; font-family: var(--font-heading); font-size: 17px; font-weight: 500; color: var(--color-accent-300);"><span class="pt">Linguagem simples para estados e erros</span><span class="en">Plain language for states and errors</span></p>
         <p style="margin: 0; font-size: 15px; color: var(--color-neutral-400);"><span class="pt">A linguagem técnica pode confundir usuários com pouca familiaridade. O relatório recomenda simplificar o texto para que fique claro quando o documento é válido, quando é inválido e quando houve um erro do sistema.</span><span class="en">Technical language can confuse users with little familiarity. The report recommends simplifying the text so it is clear when the document is valid, when it is invalid and when the system made an error.</span></p>
@@ -268,7 +282,7 @@
   <section style="max-width: 940px; margin: 0 auto; padding: 72px 32px 0;">
     <p style="margin: 0 0 10px; font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.14em; color: var(--color-accent);">05</p>
     <h3 style="margin: 0 0 12px; font-family: var(--font-heading); font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 24px;"><span class="pt">Resultado e aprendizado</span><span class="en">Outcome and takeaway</span></h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 36px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 36px;">
       <div>
         <p class="pt" style="margin: 0 0 14px; color: var(--color-neutral-300);">O relatório reuniu 19 achados em 4 fluxos, em 29 slides pensados para serem lidos de forma independente: cada um traz o achado, a sugestão e a tela onde ele aparece. À época, as recomendações foram adotadas.</p><p class="en" style="margin: 0 0 14px; color: var(--color-neutral-300);">The report gathered 19 findings across 4 flows, in 29 slides designed to be read independently: each one carries the finding, the suggestion and the screen where it appears. At the time, the recommendations were adopted.</p>
         <p class="pt" style="margin: 0; color: var(--color-neutral-300);">Nove achados estão ancorados em heurísticas de usabilidade explícitas, e são eles que este case destaca. O foco ficou na leitura por QR Code e no controle do titular sobre os próprios dados. Este case descreve o aplicativo da CIN em setembro de 2024.</p><p class="en" style="margin: 0; color: var(--color-neutral-300);">Nine findings are anchored in explicit usability heuristics, and those are the ones this case highlights. The focus stayed on QR Code reading and the holder's control over their own data. This case describes the CIN app as of September 2024.</p>
@@ -283,17 +297,20 @@
 
   <section style="max-width: 940px; margin: 0 auto; padding: 72px 32px 0;">
     <p style="margin: 0 0 18px; font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-500);"><span class="pt">PRÓXIMOS PROJETOS</span><span class="en">NEXT CASE STUDIES</span></p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
-      <div style="border: 1px dashed var(--color-divider); border-radius: var(--radius-md); padding: 28px; min-height: 124px; display: flex; flex-direction: column; justify-content: flex-end;">
-        <p style="margin: 0 0 4px; font-family: var(--font-heading); font-size: 11px; color: var(--color-neutral-500);">02</p>
-        <p style="margin: 0; font-family: var(--font-heading); font-size: 18px; font-weight: 500; color: var(--color-neutral-400);"><span class="pt">Em breve</span><span class="en">Coming soon</span></p>
-      </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 16px;">
+      <a href="fgts.html" style="border: 1px solid var(--color-accent-700); border-radius: var(--radius-md); padding: 28px; min-height: 124px; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px;">
+        <p style="margin: 0; font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.12em; color: var(--color-accent);"><span class="pt">02 &middot; GOVERNO FEDERAL &middot; 2023</span><span class="en">CASE STUDY 02 &middot; FEDERAL GOVERNMENT &middot; 2023</span></p>
+        <p style="margin: 0; font-family: var(--font-heading); font-size: 18px; font-weight: 500; color: var(--color-text);">FGTS Digital &rarr;</p>
+        <p style="margin: 0; font-size: 13px; color: var(--color-neutral-400);"><span class="pt">Pesquisa de usabilidade com 16 profissionais</span><span class="en">Usability research with 16 professionals</span></p>
+      </a>
       <div style="border: 1px dashed var(--color-divider); border-radius: var(--radius-md); padding: 28px; min-height: 124px; display: flex; flex-direction: column; justify-content: flex-end;">
         <p style="margin: 0 0 4px; font-family: var(--font-heading); font-size: 11px; color: var(--color-neutral-500);">03</p>
         <p style="margin: 0; font-family: var(--font-heading); font-size: 18px; font-weight: 500; color: var(--color-neutral-400);"><span class="pt">Em breve</span><span class="en">Coming soon</span></p>
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer style="max-width: 940px; margin: 80px auto 0; padding: 32px 32px 0; border-top: 1px solid var(--color-divider); display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end;">
     <div>
@@ -305,11 +322,21 @@
   </footer>
 </div>
 <script>
-document.querySelectorAll('[data-langbtn]').forEach(function (button) {
-  button.addEventListener('click', function () {
-    document.querySelector('[data-lang]').setAttribute('data-lang', button.getAttribute('data-langbtn'));
+(function () {
+  var root = document.querySelector('[data-lang]');
+  if (!root) return;
+  try {
+    var saved = localStorage.getItem('portfolio-lang');
+    if (saved === 'pt' || saved === 'en') root.setAttribute('data-lang', saved);
+  } catch (e) {}
+  document.querySelectorAll('[data-langbtn]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var lang = button.getAttribute('data-langbtn');
+      root.setAttribute('data-lang', lang);
+      try { localStorage.setItem('portfolio-lang', lang); } catch (e) {}
+    });
   });
-});
+})();
 </script>
 </body>
 </html>
